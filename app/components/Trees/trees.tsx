@@ -23,7 +23,7 @@ export const ThreeTrees = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_109' || name === 'Object_110'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -47,7 +47,7 @@ export const Tree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_106' || name === 'Object_107'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -65,7 +65,7 @@ export const Tree2 = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_103' || name === 'Object_104'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -82,7 +82,7 @@ export const BigTree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_101' || name === 'Object_100' || name === 'Object_99'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -99,7 +99,7 @@ export const RoundTree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_96' || name === 'Object_95' || name === 'Object_97'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -116,7 +116,7 @@ export const BigRoundTree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_90' || name === 'Object_91' || name === 'Object_92'){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -133,7 +133,7 @@ export const PineTree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_86' || name === 'Object_87' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -150,7 +150,7 @@ export const BiggerRoundTree = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_84' || name === 'Object_83' || name === 'Object_82' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }   
             })}
         </group>
@@ -167,7 +167,7 @@ export const Cloud = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_74' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -184,7 +184,7 @@ export const Cloud2 = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_68' || name === 'Object_69' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -201,7 +201,7 @@ export const Tree3 = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_64' || name === 'Object_63' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -218,7 +218,7 @@ export const PineTree2 = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_61' || name === 'Object_60' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -235,7 +235,7 @@ export const PineTree3 = ({
         <group rotation={rotation} scale={scale} position={position}>
             {Object.entries(nodes).map(([name, node]) => {
                 if (name === 'Object_58' || name === 'Object_57' ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -265,7 +265,7 @@ export const LeafyTree = ({
                     name === 'Object_54' || 
                     name === 'Object_55'
                 ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -297,7 +297,7 @@ export const ThinThree = ({
                     name === 'Object_19' || // 
                     name === 'Object_22' 
                 ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -317,7 +317,7 @@ export const GoodTree = ({
                     name === 'Object_15' || // NC DAMN TREE
                     name === 'Object_14'
                 ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>
@@ -337,7 +337,7 @@ export const LeavelessTree = ({
                     name === 'Object_6' || 
                     name === 'Object_5'
                 ){
-                    return <primitive key={name} object={node} />
+                    return <primitive key={name} object={node.clone(true)} />
                 }
             })}
         </group>

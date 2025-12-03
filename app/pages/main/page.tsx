@@ -68,20 +68,24 @@ const debugRef = useRef<HTMLDivElement>(null)
                 <RoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-62, -.3, 30]}/>
                 <BigRoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-68, -.3, 30]} />
                 {/* <PineTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-62, -.3, 30]}/> */}
-                <BiggerRoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-62, -.3, 30]}/>
+                <BiggerRoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-62, -.3, 34]} />
+                <BiggerRoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-81, -.3, 34]} />
+
                 <Cloud rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-50, -.3, 120]} />
-                <Cloud2 />
-                <Tree3 />
+                <Cloud rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-45, -.3, 110]} />
+                <Cloud2 rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-50, -.3, 120]}/>
+                <Tree3 rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-41, -.3, 39]}/>
+                <LeavelessTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-61, -.3, 21]}/>
                 <PineTree2 />
                 <PineTree3 />
                 <LeafyTree />
-                <ThinThree />
-                <GoodTree />
-                <LeavelessTree />
+                <ThinThree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-10, -.3, 29]}/>
+                <GoodTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-25, -.3, 40.5]}/>
+                <RoundTree rotation={[-Math.PI/2, 0, 0]} scale={[0.05, 0.05, 0.05]} position={[-43, -.3, 38]}/>
 
                 
                 {/* Add the debug view here */}
-                <ObstacleDebug />
+                {/* <ObstacleDebug /> */}
 
                 {/* <gridHelper args={[100, 100]} /> */}
                 </Canvas>
